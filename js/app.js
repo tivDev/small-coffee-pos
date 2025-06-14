@@ -28,13 +28,23 @@ function initializeLocalStorage() {
         localStorage.setItem('discounts', JSON.stringify(defaultDiscounts));
     }
 
-    if (!localStorage.getItem('transactions')) {
+  if (!localStorage.getItem('transactions')) {
+        const today = new Date();
+        const dates = [];
+        
+        // Generate dates for the last 5 days
+        for (let i = 0; i < 5; i++) {
+            const date = new Date(today);
+            date.setDate(date.getDate() - i);
+            dates.push(date.toISOString().split('T')[0]);
+        }
+
         const defaultTransactions = [
-            { id: 1, date: "2025-06-01", items: ["Espresso", "Croissant"], total: 5.25, status: "completed" },
-            { id: 2, date: "2023-06-01", items: ["Cappuccino"], total: 3.50, status: "completed" },
-            { id: 3, date: "2023-06-02", items: ["Latte", "Muffin"], total: 6.25, status: "completed" },
-            { id: 4, date: "2023-06-02", items: ["Americano", "Green Tea"], total: 5.25, status: "completed" },
-            { id: 5, date: "2023-06-03", items: ["Mocha"], total: 4.00, status: "completed" }
+            { id: 1, date: dates[0], time: "10:00", items: ["Espresso", "Croissant"], total: 5.25, status: "completed" },
+            { id: 2, date: dates[1], time: "11:00", items: ["Cappuccino"], total: 3.50, status: "completed" },
+            { id: 3, date: dates[2], time: "12:00", items: ["Latte", "Muffin"], total: 6.25, status: "completed" },
+            { id: 4, date: dates[3], time: "13:00", items: ["Americano", "Green Tea"], total: 5.25, status: "completed" },
+            { id: 5, date: dates[4], time: "14:00", items: ["Mocha"], total: 4.00, status: "completed" }
         ];
         localStorage.setItem('transactions', JSON.stringify(defaultTransactions));
     }
