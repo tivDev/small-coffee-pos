@@ -92,7 +92,6 @@ nav ul li a:hover {
 
 nav ul li.active a {
     background-color: rgba(255, 255, 255, 0.2);
-    border-left: 4px solid var(--secondary);
 }
 
 .content {
@@ -137,7 +136,6 @@ nav ul li.active a {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    /* display: flex; */
     align-items: center;
 }
 
@@ -313,6 +311,15 @@ table tr:hover {
 }
 
 /* Products and categories tables */
+.product-list{
+    margin-top: 20px;
+}
+.catagory-list{
+    margin-top: 20px;
+}
+.discount-list{
+    margin-top: 20px;
+}
 .action-btns {
     display: flex;
     gap: 5px;
@@ -326,8 +333,6 @@ table tr:hover {
 }
 
 .products-grid {
-    /* display: grid; */
-    /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
     gap: 15px;
 }
 
@@ -402,6 +407,7 @@ table tr:hover {
 }
 
 .cart-items {
+    height: 300px;
     max-height: 300px;
     overflow-y: auto;
     margin-bottom: 20px;
@@ -529,6 +535,9 @@ table tr:hover {
         margin-right: 0;
         font-size: 20px;
     }
+     nav ul li a p{
+        display: none;
+     }
 
     .card {
         flex-direction: column;
