@@ -14,6 +14,9 @@ Welcome to the Coffee POS system, a lightweight and efficient point-of-sale solu
 
 - **Sales Page**: Facilitate the selling of products with a built-in shopping cart for calculating total sales.
 
+- **Transactions Management**: Track and manage all transactions with an intuitive interface. View transaction history, filter by date, and reset filters to see all records. Transactions are stored in local storage, ensuring data persistence across sessions.
+
+
 
 This POS system is designed to enhance the efficiency of your coffee shop, providing a seamless experience for both staff and customers.
 
