@@ -312,22 +312,27 @@ table tr:hover {
 }
 
 /* Products and categories tables */
-.table-container{
+.table-container {
     width: 100%;
     overflow-x: auto;
 }
-.product-list{
+
+.product-list {
     margin-top: 20px;
 }
-.catagory-list{
+
+.catagory-list {
     margin-top: 20px;
 }
-.discount-list{
+
+.discount-list {
     margin-top: 20px;
 }
-.transaction-list{
+
+.transaction-list {
     margin-top: 20px;
 }
+
 .action-btns {
     display: flex;
     gap: 5px;
@@ -429,12 +434,14 @@ table tr:hover {
     padding: 10px 0;
     border-bottom: 1px solid #eee;
 }
-.cart-item-price{
+
+.cart-item-price {
     display: flex;
     align-items: center;
     gap: 5px;
 }
-.remove-item{
+
+.remove-item {
     width: 20px;
     height: 20px;
     background: #00000033;
@@ -494,6 +501,7 @@ table tr:hover {
     width: 100%;
     margin-top: 20px;
 }
+
 /* Transactions style */
 .filter-options {
     display: flex;
@@ -507,7 +515,8 @@ table tr:hover {
     margin-bottom: 0;
     flex: 1;
 }
-#reset-filter{
+
+#reset-filter {
     margin-top: 20px;
 }
 
@@ -551,9 +560,10 @@ table tr:hover {
         margin-right: 0;
         font-size: 20px;
     }
-     nav ul li a p{
+
+    nav ul li a p {
         display: none;
-     }
+    }
 
     .card {
         flex-direction: column;
