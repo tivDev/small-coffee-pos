@@ -156,6 +156,7 @@ function renderTopProductsChart() {
 
 function renderRecentTransactions() {
     const transactions = getTransactions().slice(-5).reverse();
+    console.log('transactions: ', transactions);
     const tbody = document.querySelector('#recent-transactions tbody');
     tbody.innerHTML = '';
     
@@ -165,6 +166,7 @@ function renderRecentTransactions() {
         tr.innerHTML = `
             <td>${t.id}</td>
             <td>${new Date(t.date).toLocaleDateString()}</td>
+            <td>${t.time}</td>
             <td>${t.items.join(', ')}</td>
             <td>$${t.total.toFixed(2)}</td>
             <td><span class="status ${t.status}">${t.status}</span></td>
