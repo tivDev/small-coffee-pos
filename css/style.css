@@ -365,6 +365,7 @@ table tr:hover {
 
 .category-tabs {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 20px;
 }
@@ -394,7 +395,6 @@ table tr:hover {
 .product-card {
     background-color: var(--white);
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 15px;
     text-align: center;
     cursor: pointer;
@@ -402,8 +402,8 @@ table tr:hover {
 }
 
 .product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.055);
 }
 
 .product-card img {
@@ -478,18 +478,20 @@ table tr:hover {
 }
 
 .cart-item-quantity button {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border: 1px solid #ddd;
+    border-radius: 100px;
     background-color: #f8f9fa;
     cursor: pointer;
 }
 
 .cart-item-quantity input {
-    width: 40px;
+    width: 60px;
     text-align: center;
     margin: 0 5px;
     border: 1px solid #ddd;
+    border-radius: 5px;
     padding: 3px;
 }
 
